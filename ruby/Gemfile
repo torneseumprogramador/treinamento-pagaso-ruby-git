@@ -3,6 +3,7 @@ source 'https://rubygems.org'
 ruby '3.2.2'
 
 gem 'byebug'
+gem 'pg'
 
 # Coloque as gemas que você precisa abaixo desta linha
 

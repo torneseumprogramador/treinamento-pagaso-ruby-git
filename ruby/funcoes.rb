@@ -1,24 +1,16 @@
 require 'json'
-
+require_relative 'db/postgres_persistencia_alunos.rb'
+require_relative 'db/json_persistencia.rb'
+require_relative 'repositorio/persistencia.rb'
 
 def carregar_dados_json
-  file_path = 'db/clientes.json'
-
-  if File.exist?(file_path)
-    file = File.read(file_path)
-    return JSON.parse(file)
-  end
-
-  []
+  Persistencia.new(PostgresPersistenciaAlunos.new).todos
+  # Persistencia.new(JsonPersistencia.new("clientes")).todos
 end
 
 def salvar_dados_json(cliente)
-  file_path = 'db/clientes.json'
-
-  clientes = carregar_dados_json
-  clientes << cliente
-  json_clientes = JSON.generate(clientes)
-  File.write(file_path, json_clientes)
+  Persistencia.new(PostgresPersistenciaAlunos.new).salvar(cliente)
+  # Persistencia.new(JsonPersistencia.new("clientes")).salvar(cliente)
 end
 
 def cadastro
