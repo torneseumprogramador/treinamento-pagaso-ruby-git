@@ -7,8 +7,11 @@ o valor que ele vai colocar de combustível
 
 armazene os clientes em um arquivo posto.json
 
-e de um relatório quando solicitado mostrando os clientes com os carros do mesmo e
-a quantidade total de litros e o valor a pagar
+::: no relatório, mostrar :::
+cliente: [nome cliente]
+carro: [carro do cliente]
+litros: [quantidade de litros]
+valor: [valor que ele pagou] 
 
 o valor do litro da gasolina é de  300Kz
 
