@@ -1,7 +1,6 @@
 require 'byebug'
 require_relative 'funcoes.rb'
 
-alunos = []
 while true
     system "clear" or system "cls"
 
@@ -15,21 +14,9 @@ while true
 
     case menu
     when "1"
-      cadastro(alunos)
+      cadastro
     when "2"
-
-      system "clear" or system "cls"
-
-      alunos.each do |aluno|
-        puts("Nome: #{aluno[:nome]}")
-        puts("Notas: #{aluno[:notas]}")
-
-        media = aluno[:notas].map{|materia_com_nota| materia_com_nota[:nota] }.sum / aluno[:notas].length
-        puts("Media: #{media}")
-        puts("-----------------------")
-      end
-
-      sleep(5)
+      relatorio_alunos
     else
       system "clear" or system "cls"
       puts("Opção inválida")

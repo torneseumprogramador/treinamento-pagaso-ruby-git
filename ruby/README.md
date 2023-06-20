@@ -1,23 +1,14 @@
-# exercicio
+Faça um programa console do ruby
+para tirar um pedido de posto de gasolina
+no programa, solicite
+nome do cliente
+o veiculo
+o valor que ele vai colocar de combustível
 
-faça um programa para capturar um aluno e as suas notas de 
-matemática, portugues e ciencias
+armazene os clientes em um arquivo posto.json
 
-no final do programa mostre um relátorio do aluno com o seguinte formato
+e de um relatório quando solicitado mostrando os clientes com os carros do mesmo e
+a quantidade total de litros e o valor a pagar
 
-Nome: Zacarias
-Notas:
-  Matemática: 7.8
-  Portugês: 9.5
-  Ciências: 4.8
-Média: 7.3
-Situação: Aprovado (regra de situação é < 4 :reprovado, de 5 a 6.9 : recuperação, acima de 6.9 : aprovado)
+o valor do litro da gasolina é de  300Kz
 
-1 usuario
-
-multiplos usuarios
-ficar gerério para a quantidade de usuario
-menu no sistema onde eu possa escolher se eu quero cadastrar os alunos e as notas
-e um outro item no menu para mostrar o relatório
-
-outro item no menu - Mostrar uma média da turma
