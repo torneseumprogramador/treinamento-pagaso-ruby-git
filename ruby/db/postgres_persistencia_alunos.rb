@@ -29,8 +29,6 @@ class PostgresPersistenciaAlunos
 
     def salvar(obj)
         self.open
-        nome_aluno = 'João'
-        notas_aluno = 'Nota 1: 8.5, Nota 2: 9.0, Nota 3: 7.5'
         @conn.exec_params('INSERT INTO alunos (nome, notas) VALUES ($1, $2)', [obj["nome"], obj["notas"].to_json])
         self.close
     end
