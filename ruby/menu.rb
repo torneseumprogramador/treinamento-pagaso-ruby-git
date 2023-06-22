@@ -1,6 +1,18 @@
 require 'byebug'
 require_relative 'funcoes.rb'
 
+# require_relative 'db/postgres_persistencia.rb'
+# require_relative 'models/produto.rb'
+
+# repo = PostgresPersistencia.new(Produto)
+# p = Produto.new
+# p.nome = "banana"
+# p.preco = 3.33
+
+# repo.salvar(p)
+
+# todos = repo.todos
+
 while true
     system "clear" or system "cls"
 
